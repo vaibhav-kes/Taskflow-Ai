@@ -152,7 +152,7 @@ The app will be available at `http://localhost:3000`.
 - `PUT /api/tasks/:id` - Update task status
 
 ### AI Insights
-- `GET /api/ai/summary` - Generate AI summary of tasks
+- `GET /api/ai/summary` - Generate AI summary of task
 
 ---
 
