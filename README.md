@@ -6,6 +6,13 @@ This repository is configured to be fully production-ready and easily deployable
 
 ---
 
+## 🟢 Live Demo & API Links
+
+- **Live Application (Frontend)**: [https://frontend-alpha-eight-23.vercel.app](https://frontend-alpha-eight-23.vercel.app)
+- **Production API (Backend)**: [https://taskflow-ai-production-0110.up.railway.app](https://taskflow-ai-production-0110.up.railway.app)
+
+---
+
 ## 🌟 Features
 
 - **Project Management**: Create, edit, and organize projects.
@@ -35,7 +42,7 @@ This repository is configured to be fully production-ready and easily deployable
 - JSON Web Tokens (JWT)
 - bcrypt.js
 - Groq AI SDK
-- Security: Helmet, xss-clean, hpp, express-rate-limit
+- Security: Helmet, hpp, express-rate-limit
 
 ---
 
@@ -150,7 +157,6 @@ The app will be available at `http://localhost:3000`.
 ---
 
 ## 🔒 Security Measures Implemented
-- **XSS Protection**: `xss-clean` neutralizes script injection.
 - **Parameter Pollution**: `hpp` prevents array parameter attacks.
 - **Rate Limiting**: Brute-force protection on the auth routes.
 - **HTTP Headers**: Secured dynamically using `helmet`.
