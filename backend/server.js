@@ -1,3 +1,12 @@
+// Ensure Node's crypto module is available globally before any other module
+// loads. bcryptjs v3+ and jsonwebtoken rely on globalThis.crypto (Web Crypto
+// API). Requiring it here guarantees it is initialised first, regardless of
+// the Node.js version or environment quirks.
+const crypto = require('crypto');
+if (!globalThis.crypto) {
+  globalThis.crypto = crypto.webcrypto;
+}
+
 const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
