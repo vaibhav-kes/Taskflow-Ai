@@ -12,7 +12,6 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 const helmet = require('helmet');
 const compression = require('compression');
-const xss = require('xss-clean');
 const hpp = require('hpp');
 const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
@@ -39,9 +38,6 @@ const app = express();
 
 // --------------- Security Middleware ---------------
 app.use(helmet());
-
-// Prevent XSS attacks
-app.use(xss());
 
 // Prevent HTTP Param Pollution
 app.use(hpp());
